@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>
+            <input id="num1" type="number" style="width:180px">
+        </td>
+        <td>
+            <input id="num2" type="number" style="width:180px">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="A()">Addition(+)</button>
+            <button onclick="B()">Subtraction(-)</button>
+        </td>
+        <td>
+            <button onclick="C()">Multiplication(x)</button>
+            <button onclick="D()">Division(/)</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Result:
+            <input id="result" type="text" style="width:330px" >
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    function A(){
+        let a = +document.getElementById('num1').value
+        let b = +document.getElementById('num2').value
+        document.getElementById('result').value=(a+b)
+    }
+    function B(){
+        let a = +document.getElementById('num1').value
+        let b = +document.getElementById('num2').value
+        document.getElementById('result').value=(a-b)
+    }
+    function C(){
+        let a = +document.getElementById('num1').value
+        let b = +document.getElementById('num2').value
+        document.getElementById('result').value=(a*b)
+    }
+    function D(){
+        let a = +document.getElementById('num1').value
+        let b = +document.getElementById('num2').value
+        document.getElementById('result').value=(a/b)
+    }
+</script>

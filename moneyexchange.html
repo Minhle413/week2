@@ -5,6 +5,46 @@
     <title>Title</title>
 </head>
 <body>
-
+<table>
+    <tr>
+        <td>Amount</td>
+        <td>From Currency</td>
+        <td>To Currency</td><td></td>
+    </tr>
+    <tr>
+        <td>
+            <input id="Amount" type="number">
+        </td>
+        <td>
+            <select id="direct">
+                <option value="1">VND</option>
+                <option value="23000">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="reverse">
+                <option value="1">VND</option>
+                <option value="23000">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="A()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            Result:
+            <input id="result" type="text">
+        </td>
+    </tr>
+</table>
 </body>
 </html>
+<script>
+    function A (){
+        let a = document.getElementById('Amount').value
+        let b = document.getElementById('direct').value
+        let c = document.getElementById('reverse').value
+        document.getElementById('result').value=a*b/c
+    }
+</script>
