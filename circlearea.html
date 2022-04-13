@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Radius:</td>
+        <td>
+            <input id="radius" type="number">
+        </td>
+        <td>
+            <button onclick="A()">Calculate</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Area:</td>
+        <td>
+            <input id="area" type="text">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    function A(){
+        let a = document.getElementById('radius').value;
+        document.getElementById('area').value=(a*Math.PI)
+    }
+</script>
