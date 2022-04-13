@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td></td>
+        <td>Math</td>
+        <td>Physic</td>
+        <td>Chemistry</td>
+    </tr>
+    <tr>
+        <td>Grade</td>
+        <td>
+            <input id="math" type="number" style="width:40px">
+        </td>
+        <td>
+            <input id="physic" type="number" style="width:40px">
+        </td>
+        <td>
+            <input id="chemistry" type="number" style="width:40px">
+        </td>
+    </tr>
+    <tr>
+        <td>Totals:</td>
+        <td colspan="2">
+            <input id="totals" type="text">
+        </td>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <td>Average:</td>
+        <td colspan="2">
+            <input id="average" type="text">
+        </td>
+        <td>
+            <button onclick="A()">Calculate</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    function A(){
+        let a = +document.getElementById('math').value
+        let b = +document.getElementById('physic').value
+        let c = +document.getElementById('chemistry').value
+        document.getElementById('totals').value=a+b+c
+        document.getElementById('average').value=(a+b+c)/3
+</script>
