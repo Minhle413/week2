@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>DO YOU LOVE ME?</p>
+<button id="btn"onclick="B()">Touch me! Seduce me!</button><br>
+<button id="btn2" onmousemove="changer()">Hell No</button>
+</body>
+</html>
+<script>
+    function changer(){
+        let btn2 = document.getElementById('btn2');
+        btn2.style.marginTop= Math.random()*200 + "px";
+        btn2.style.marginLeft= Math.random()*200 + "px";
+    }
+    function B(){
+        let a = document.getElementById('btn')
+        alert("Friendzoned");
+    }
+</script>
