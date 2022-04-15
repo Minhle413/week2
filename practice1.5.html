@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p>Grade</p>
+<input id="grade" type="number"><br>
+<button onclick="A()" >Evaluate</button>
 </body>
 </html>
+<script>
+    function A(){
+        let a = document.getElementById('grade').value;
+        if (a>85){
+            document.write("Damn")
+        } else if (85>a && a>=75){
+            document.write("Good")
+        } else if (75>a && a>=50){
+            document.write("Normal")
+        }else{
+            document.write("Suspended")
+        }
+    }
+</script>
