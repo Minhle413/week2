@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Amount of products sold:</p>
+<input id="products" text="number">
+<button onclick="A()">Calculate</button>
+</body>
+</html>
+<script>
+    function A(){
+        let a = +document.getElementById('products').value;
+        document.write(a*1/10 + "$")
+    }
+</script>
